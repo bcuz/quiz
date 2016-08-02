@@ -18,7 +18,8 @@ $(function() {
 
   // console.log(questions[1].question);
 
-  $(".questions").prepend("<p>" + questions[question_num].question + "</p>")
+  $(".questions").prepend("<p>" + questions[question_num].question + "</p>\
+    <input type='radio' value='" + questions[question_num].option1 + "'>" + questions[question_num].option1)
 
   var nextQuest = function() {
     question_num += 1;
