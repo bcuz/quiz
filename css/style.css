@@ -1143,9 +1143,6 @@ td.visible-print {
   */
   color: black; }
 
-body {
-  background-color: green; }
-
 @media (min-width: 700px) {
   .example-style1 {
     /*
