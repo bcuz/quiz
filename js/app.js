@@ -1,6 +1,6 @@
 $(function() {
 
-  var question_num = 1;
+  var question_num = 0;
 
   var questions = [
   {
@@ -11,7 +11,7 @@ $(function() {
   ]
 
   // gonna need stuff incremented here
-  $("form").prepend("<p>" + questions[0].question + "</p>")
+  $("form").prepend("<p>" + questions[question_num].question + "</p>")
 
   // next question function
   // can delete the form and remake it
