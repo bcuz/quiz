@@ -7,6 +7,12 @@ $(function() {
     question: "When did?",
     option1: "bob",
     option2: "nick"
+  },
+
+  {
+    question: "Who did?",
+    option1: "gary",
+    option2: "lerton"
   }
   ]
 
@@ -17,6 +23,10 @@ $(function() {
   // can delete the form and remake it
 
   var stuff = ["w/e"]
+
+  var nextQuest = function() {
+    question_num += 1;
+  }
 
 $("form").submit(function() {
 
