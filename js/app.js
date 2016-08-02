@@ -2,7 +2,7 @@ $(function() {
 
   var questions = [
   {
-    question: "What's my name?",
+    question: "When did?",
     option1: "bob",
     option2: "nick"
   }
@@ -10,13 +10,7 @@ $(function() {
 
   ]
 
-  $("form").prepend("
-
-
-
-    <input type='text'>"
-
-    )
+  $("form").prepend("<p>" + questions[0].question + "</p>")
 
   // next question function
 
