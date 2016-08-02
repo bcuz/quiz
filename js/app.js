@@ -18,7 +18,6 @@ $(function() {
 
   // console.log(questions[1].question);
 
-  // gonna need stuff incremented here
   $(".questions").prepend("<p>" + questions[question_num].question + "</p>")
 
   var nextQuest = function() {
