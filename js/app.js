@@ -4,9 +4,12 @@ $(function() {
 
   // next question function
 
+  var stuff = ["hi"]
+
   // form is appened onto the page at start
 $("form").submit(function() {
-    alert('hi');
+
+    $("input").val(stuff[0])
 
 
 
