@@ -1,11 +1,22 @@
 $(function() {
 
-  var questions = {
-    1: "hi",
-    2: "no"
+  var questions = [
+  {
+    question: "What's my name?",
+    option1: "bob",
+    option2: "nick"
   }
 
-  $("form").prepend("<input type='text'>")
+
+  ]
+
+  $("form").prepend("
+
+
+
+    <input type='text'>"
+
+    )
 
   // next question function
 
