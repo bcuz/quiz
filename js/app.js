@@ -16,25 +16,23 @@ $(function() {
   }
   ]
 
+  // console.log(questions[1].question);
+
   // gonna need stuff incremented here
   $(".questions").prepend("<p>" + questions[question_num].question + "</p>")
 
-  // next question function
-  // can delete the form and remake it
-
-  var stuff = ["w/e"]
-
   var nextQuest = function() {
     question_num += 1;
+    console.log(question_num);
 
-    $("body").children().remove();
+    $(".questions").empty();
+
+    $(".questions").prepend("<p>" + questions[question_num].question + "</p>")
   }
 
 $("form").submit(function() {
 
-    $("input").val(stuff[0])
-
-
+    nextQuest();
 
     return false;
 
