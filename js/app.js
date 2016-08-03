@@ -109,10 +109,10 @@ $("form").submit(function() {
         $(".score").text("Current score " + score + "/3")
 
         // think i would like to give random facts like in the coffee quiz
-        alert("You're right! " +  questions[question_num-1].more)
+        alert("Correct! " +  questions[question_num-1].more)
         nextQuestion();
       } else {
-        alert("Wrong!")
+        alert("Incorrect")
         nextQuestion();
       }
 
