@@ -100,7 +100,7 @@ $(function() {
 
 
     } else {
-    $(".questions").empty();
+    $(".questions p").remove();
 
     showQuestions();
 
