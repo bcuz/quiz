@@ -72,7 +72,7 @@ $(function() {
     // geting that weird duplication that i had when i had a function
     // call itself
     // could refresh the page to get rid of it, sorta cheap i suppose
-    if (question_num === 2) {
+    if (question_num === 6) {
       $(".questions").empty();
       $("button[type='submit']").hide();
       $("body").append("<div class='over'><p>The game is done</p><button class='new'>New Game</button></div>");
