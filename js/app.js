@@ -54,12 +54,13 @@ $(function() {
   //   answer: "bob"
   // }
   ]
-
   var showQuestions = function() {
     // maybe could just replace values of form instead of recreating each time
+  $(".score").show();
+  $("h2").show();
   $(".over").remove();
   $("button[type='submit']").show();
-  $("h2").text("Question " + question_num + " out of 5")
+  $("h2").text("Question " + question_num + " out of 3")
   $(".questions").prepend("<p>" + questions[question_num-1].question + "</p>\
     <div><input type='radio' name='question' value='" + questions[question_num-1].option1 + "'>"
     + questions[question_num-1].option1 + "</div><div><input type='radio' name='question' value='" +
@@ -83,10 +84,11 @@ $(function() {
     // this needs to be changed back to 6 at the end
     if (question_num === 4) {
       $(".questions").empty();
-      $("h2").remove();
+      $("h2").hide();
+      $(".score").hide();
       $("button[type='submit']").hide();
       $("body").append("<div class='over'><p>Finished. Score: " + score +
-        "/5</p><button class='new'>New Game</button></div>");
+        "/3</p><button class='new'>New Game</button></div>");
 
 
     } else {
@@ -104,7 +106,7 @@ $("form").submit(function() {
 
       if ($("input[type='radio']:checked").val() === questions[question_num-1].answer) {
         score += 1;
-        $(".score").text("Current score " + score + "/5")
+        $(".score").text("Current score " + score + "/3")
 
         // think i would like to give random facts like in the coffee quiz
         alert("You're right! " +  questions[question_num-1].more)
