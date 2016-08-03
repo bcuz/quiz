@@ -18,7 +18,8 @@ $(function() {
     option1: "gary",
     option2: "lerton",
     option3: "bob",
-    option4: "nick"
+    option4: "nick",
+    answer: "bob"
   },
 
   {
@@ -26,7 +27,8 @@ $(function() {
     option1: "gary",
     option2: "lerton",
     option3: "bob",
-    option4: "nick"
+    option4: "nick",
+    answer: "bob"
   },
 
   {
@@ -34,7 +36,8 @@ $(function() {
     option1: "gary",
     option2: "lerton",
     option3: "bob",
-    option4: "nick"
+    option4: "nick",
+    answer: "bob"
   },
 
   {
@@ -42,7 +45,8 @@ $(function() {
     option1: "gary",
     option2: "lerton",
     option3: "bob",
-    option4: "nick"
+    option4: "nick",
+    answer: "bob"
   }
   ]
 
