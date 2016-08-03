@@ -61,6 +61,11 @@ $(function() {
   // original questions are shown here.
   showQuestions();
 
+   $("body").on("click", ".new", function() {
+          question_num = 1;
+          showQuestions();
+        })
+
   var nextQuestion = function() {
     question_num += 1;
 
@@ -71,13 +76,7 @@ $(function() {
       $(".questions").empty();
       $("button[type='submit']").hide();
       $("body").append("<div class='over'><p>The game is done</p><button class='new'>New Game</button></div>");
-      $("body").on("click", ".new", function() {
-          question_num = 1;
-          console.log(question_num);
-          showQuestions();
 
-
-        })
 
     } else {
     $(".questions").empty();
