@@ -98,11 +98,8 @@ $("form").submit(function() {
       }
 
       nextQuestion();
-
     }
 
-
     return false;
-
   });
 });
