@@ -87,7 +87,6 @@ $("form").submit(function() {
 
       if ($("input[type='radio']:checked").val() === questions[question_num-1].answer) {
         score += 1;
-        console.log(score);
       }
 
       nextQuestion();
