@@ -27,10 +27,10 @@ $(function() {
 
   {
     question: "What was the nickname for the Rams offense?",
-    option1: "The Triplets",
+    option1: "Bob and Weave",
     option2: "K-Gun",
     option3: "The Greatest Show on Turf",
-    option4: "Bob and Weave",
+    option4: "The Triplets",
     answer: "The Greatest Show on Turf",
     more: "This offense set a new record for total yards in a season."
   }
