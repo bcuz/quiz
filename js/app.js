@@ -15,12 +15,12 @@ $(function() {
   },
 
   {
-    question: "Which of these records did Marshall Faulk break?",
-    option1: "gary",
-    option2: "lerton",
-    option3: "bob",
-    option4: "nick",
-    answer: "bob"
+    question: "Which of these single season records did Marshall Faulk break?",
+    option1: "Receiving yards for a running back",
+    option2: "Total yards from scrimmage",
+    option3: "Rushing touchdowns",
+    option4: "Receiving touchdowns for a running back",
+    answer: "Total yards from scrimmage",
   },
 
   {
