@@ -11,7 +11,8 @@ $(function() {
     option2: "2nd",
     option3: "3rd",
     option4: "4th",
-    answer: "2nd"
+    answer: "2nd",
+    more: "Dan Marino was the first."
   },
 
   {
@@ -20,7 +21,8 @@ $(function() {
     option2: "Total yards from scrimmage",
     option3: "Rushing touchdowns",
     option4: "Receptions by a running back",
-    answer: "Total yards from scrimmage"
+    answer: "Total yards from scrimmage",
+    more: "The record was previously held by Barry Sanders"
   },
 
   {
@@ -102,7 +104,7 @@ $("form").submit(function() {
         score += 1;
 
         // think i would like to give random facts like in the coffee quiz
-        alert("You're right!")
+        alert("You're right! " +  questions[question_num-1].more)
         nextQuestion();
       } else {
         alert("Wrong!")
