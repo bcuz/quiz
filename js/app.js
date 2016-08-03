@@ -30,7 +30,7 @@ $(function() {
     option1: "The Triplets",
     option2: "K-Gun",
     option3: "The Greatest Show on Turf",
-    option4: "Air Coryell",
+    option4: "Bob and Weave",
     answer: "The Greatest Show on Turf",
     more: "This offense set a new record for total yards in a season."
   }
