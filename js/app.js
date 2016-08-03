@@ -89,7 +89,7 @@ $(function() {
   var nextQuestion = function() {
     question_num += 1;
 
-    if (question_num === 2) {
+    if (question_num === 4) {
 
       question_num = 1;
       $(".questions").hide();
@@ -121,6 +121,7 @@ $("form").submit(function() {
         alert("Correct! " +  questions[question_num-1].more)
         nextQuestion();
       } else {
+        $(".score").text("Current score " + score + "/3")
         alert("Incorrect")
         nextQuestion();
       }
