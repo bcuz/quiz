@@ -56,11 +56,11 @@ $(function() {
   $("button[type='submit']").show();
   $("h1").text("Question " + question_num + " out of 5")
   $(".questions").prepend("<p>" + questions[question_num-1].question + "</p>\
-    <div><input type='radio' value='" + questions[question_num-1].option1 + "'>"
-    + questions[question_num-1].option1 + "</div><div><input type='radio' value='" +
+    <div><input type='radio' name='question' value='" + questions[question_num-1].option1 + "'>"
+    + questions[question_num-1].option1 + "</div><div><input type='radio' name='question' value='" +
     questions[question_num-1].option2 + "'>" + questions[question_num-1].option2 + "</div>\
-    </div><div><input type='radio' value='" + questions[question_num-1].option3 + "'>"
-    + questions[question_num-1].option3 + "</div> </div><div><input type='radio' value='"
+    </div><div><input type='radio' name='question' value='" + questions[question_num-1].option3 + "'>"
+    + questions[question_num-1].option3 + "</div> </div><div><input type='radio' name='question' value='"
      + questions[question_num-1].option4 + "'>" + questions[question_num-1].option4 + "</div>")
   }
 
