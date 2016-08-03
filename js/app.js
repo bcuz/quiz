@@ -87,7 +87,7 @@ $(function() {
       $("h2").hide();
       $(".score").hide();
       $("button[type='submit']").hide();
-      $("body").append("<div class='over'><p>Finished. Score: " + score +
+      $("body").append("<div class='over'><p>Final score: " + score +
         "/3</p><button class='new'>New Game</button></div>");
 
 
