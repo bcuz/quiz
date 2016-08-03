@@ -23,7 +23,7 @@ $(function() {
     + questions[question_num].option1 + "<input type='radio' value='" +
     questions[question_num].option2 + "'>" + questions[question_num].option2)
 
-  var nextQuest = function() {
+  var nextQuestion = function() {
     question_num += 1;
     console.log(question_num);
 
@@ -34,7 +34,7 @@ $(function() {
 
 $("form").submit(function() {
 
-    nextQuest();
+    nextQuestion();
 
     return false;
 
