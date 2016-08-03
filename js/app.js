@@ -56,7 +56,6 @@ $(function() {
   ]
 
   var showQuestions = function() {
-    // maybe could just replace values of form instead of recreating each time
   $(".score").show();
   $("h2").show();
   $(".over").remove();
