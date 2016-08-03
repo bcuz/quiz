@@ -74,10 +74,11 @@ $(function() {
   var nextQuestion = function() {
     question_num += 1;
 
-    if (question_num === 6) {
+    if (question_num === 2) {
       $(".questions").empty();
+      $("h1").remove();
       $("button[type='submit']").hide();
-      $("body").append("<div class='over'><p>The game is done</p><button class='new'>New Game</button></div>");
+      $("body").append("<div class='over'><p>Finished. Score: " + score +"/5</p><button class='new'>New Game</button></div>");
 
 
     } else {
