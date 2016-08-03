@@ -65,6 +65,7 @@ $(function() {
 
     // geting that weird duplication that i had when i had a function
     // call itself
+    // could refresh the page to get rid of it, sorta cheap i suppose
     if (question_num === 2) {
       $(".questions").empty();
       $("button[type='submit']").hide();
@@ -84,7 +85,6 @@ $(function() {
   }
 
 $("form").submit(function() {
-    console.log("fired");
     if ($("input[type='radio']:checked").val() === undefined ) {
       alert("Answer the question")
     } else {
