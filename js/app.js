@@ -6,7 +6,7 @@ $(function() {
   var questions = [
   {
     question: "Kurt Warner became the ___ player in NFL history\
-    throw 40+ touchdowns in a a single season.",
+    to throw 40+ touchdowns in a a single season.",
     option1: "1st",
     option2: "2nd",
     option3: "3rd",
@@ -77,7 +77,7 @@ $(function() {
     question_num += 1;
 
     // this needs to be changed back to 6 at the end
-    if (question_num === 2) {
+    if (question_num === 6) {
       $(".questions").empty();
       $("h2").remove();
       $("button[type='submit']").hide();
