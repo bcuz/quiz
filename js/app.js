@@ -68,11 +68,11 @@ $(function() {
   $("label[for*='1']").text(questions[question_num-1].option1);
   $("#1").val(questions[question_num-1].option1)
   $("label[for*='2']").text(questions[question_num-1].option2);
-  $("#2").val(questions[question_num-1].option1)
+  $("#2").val(questions[question_num-1].option2)
   $("label[for*='3']").text(questions[question_num-1].option3);
-  $("#3").val(questions[question_num-1].option1)
+  $("#3").val(questions[question_num-1].option3)
   $("label[for*='4']").text(questions[question_num-1].option4);
-  $("#4").val(questions[question_num-1].option1)
+  $("#4").val(questions[question_num-1].option4)
 
   }
 
