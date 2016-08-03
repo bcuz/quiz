@@ -47,7 +47,7 @@ $(function() {
   ]
 
   var showQuestions = function() {
-  $(".over").hide();
+  $(".over").remove();
   $("button[type='submit']").show();
   $("h1").text("Question " + question_num + " out of 5")
   $(".questions").prepend("<p>" + questions[question_num-1].question + "</p>\
