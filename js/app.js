@@ -69,9 +69,6 @@ $(function() {
   var nextQuestion = function() {
     question_num += 1;
 
-    // geting that weird duplication that i had when i had a function
-    // call itself
-    // could refresh the page to get rid of it, sorta cheap i suppose
     if (question_num === 6) {
       $(".questions").empty();
       $("button[type='submit']").hide();
@@ -81,7 +78,6 @@ $(function() {
     } else {
     $(".questions").empty();
 
-    // firing this off two times..
     showQuestions();
 
     }
