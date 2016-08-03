@@ -1,6 +1,7 @@
 $(function() {
 
   var question_num = 1;
+  var score = 0;
 
   var questions = [
   {
@@ -8,7 +9,8 @@ $(function() {
     option1: "bob",
     option2: "nick",
     option3: "bob",
-    option4: "nick"
+    option4: "nick",
+    answer: "bob"
   },
 
   {
@@ -65,6 +67,12 @@ $("form").submit(function() {
     if ($("input[type='radio']:checked").val() === undefined ) {
       alert("Answer the question")
     } else {
+
+      if ($("input[type='radio']:checked").val() === questions[question_num-1].answer) {
+        score += 1;
+        console.log(score);
+      }
+
       nextQuestion();
 
     }
