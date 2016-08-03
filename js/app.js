@@ -59,7 +59,8 @@ $(function() {
     + questions[question_num-1].option1 + "</div><div><input type='radio' value='" +
     questions[question_num-1].option2 + "'>" + questions[question_num-1].option2 + "</div>\
     </div><div><input type='radio' value='" + questions[question_num-1].option3 + "'>"
-    + questions[question_num-1].option3 + "</div>")
+    + questions[question_num-1].option3 + "</div> </div><div><input type='radio' value='"
+     + questions[question_num-1].option4 + "'>" + questions[question_num-1].option4 + "</div>")
   }
 
   // original questions are shown here.
