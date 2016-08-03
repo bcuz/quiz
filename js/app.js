@@ -16,9 +16,6 @@ $(function() {
   }
   ]
 
-
-  // console.log(questions[1].question);
-
   var showQuestions = function() {
   $("h1").text("Question " + question_num + " out of 5")
   $(".questions").prepend("<p>" + questions[question_num-1].question + "</p>\
