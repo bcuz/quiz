@@ -108,10 +108,8 @@ $("form").submit(function() {
 
       if ($("input[type='radio']:checked").val() === questions[question_num-1].answer) {
         score += 1;
-        // this doesnt reset on new game
         $(".score").text("Current score " + score + "/3")
 
-        // think i would like to give random facts like in the coffee quiz
         alert("Correct! " +  questions[question_num-1].more)
         nextQuestion();
       } else {
