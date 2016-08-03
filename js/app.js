@@ -26,12 +26,13 @@ $(function() {
   },
 
   {
-    question: "Who did?",
-    option1: "gary",
-    option2: "lerton",
-    option3: "bob",
-    option4: "nick",
-    answer: "bob"
+    question: "What was the nickname for the Rams offense?",
+    option1: "The Triplets",
+    option2: "K-Gun",
+    option3: "The Greatest Show on Turf",
+    option4: "Air Coryell",
+    answer: "The Greatest Show on Turf",
+    more: "This offense set a new record for total yards in a season."
   }
   // ,
 
@@ -80,7 +81,7 @@ $(function() {
     question_num += 1;
 
     // this needs to be changed back to 6 at the end
-    if (question_num === 6) {
+    if (question_num === 4) {
       $(".questions").empty();
       $("h2").remove();
       $("button[type='submit']").hide();
