@@ -62,8 +62,13 @@ $(function() {
   }
 
 $("form").submit(function() {
+    if ($("input[type='radio']:checked").val() === undefined ) {
+      alert("Answer the question")
+    } else {
+      nextQuestion();
 
-    nextQuestion();
+    }
+
 
     return false;
 
