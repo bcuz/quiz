@@ -63,12 +63,15 @@ $(function() {
   var nextQuestion = function() {
     question_num += 1;
 
+    // geting that weird duplication that i had when i had a function
+    // call itself
     if (question_num === 2) {
       $(".questions").empty();
       $("button[type='submit']").hide();
       $("body").append("<div class='over'><p>The game is done</p><button class='new'>New Game</button></div>");
       $("body").on("click", ".new", function() {
           question_num = 1;
+          console.log(question_num);
           showQuestions();
         })
 
@@ -81,6 +84,7 @@ $(function() {
   }
 
 $("form").submit(function() {
+    console.log("fired");
     if ($("input[type='radio']:checked").val() === undefined ) {
       alert("Answer the question")
     } else {
