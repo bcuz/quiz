@@ -62,7 +62,6 @@ $(function() {
   $(".over").remove();
   $("button[type='submit']").show();
   $("h2").text("Question " + question_num + " out of 3")
-  // mom's spagehtti
 
   $(".questions").prepend("<p>" + questions[question_num-1].question + "</p>")
 
