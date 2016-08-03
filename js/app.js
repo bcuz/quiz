@@ -13,6 +13,24 @@ $(function() {
     question: "Who did?",
     option1: "gary",
     option2: "lerton"
+  },
+
+  {
+    question: "Who did?",
+    option1: "gary",
+    option2: "lerton"
+  },
+
+  {
+    question: "Who did?",
+    option1: "gary",
+    option2: "lerton"
+  },
+
+  {
+    question: "Who did?",
+    option1: "gary",
+    option2: "lerton"
   }
   ]
 
