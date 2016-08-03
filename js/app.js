@@ -102,8 +102,6 @@ $(function() {
 
 
     } else {
-    // $(".questions").hide();
-
     showQuestions();
 
     }
