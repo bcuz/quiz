@@ -61,6 +61,7 @@ $(function() {
   $(".over").remove();
   $("button[type='submit']").show();
   $("h2").text("Question " + question_num + " out of 3")
+  // mom's spagehtti
   $(".questions").prepend("<p>" + questions[question_num-1].question + "</p>\
     <div><input type='radio' name='question' value='" + questions[question_num-1].option1 + "'>"
     + questions[question_num-1].option1 + "</div><div><input type='radio' name='question' value='" +
