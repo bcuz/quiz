@@ -63,8 +63,7 @@ $(function() {
   $("button[type='submit']").show();
   $("h2").text("Question " + question_num + " out of 3")
 
-  $(".questions").prepend("<p>" + questions[question_num-1].question + "</p>")
-
+  $(".questions p ").text( questions[question_num-1].question);
   $("label[for*='1']").text(questions[question_num-1].option1);
   $("#1").val(questions[question_num-1].option1)
   $("label[for*='2']").text(questions[question_num-1].option2);
@@ -82,6 +81,7 @@ $(function() {
   // starts the quiz over
    $("body").on("click", ".new", function() {
           question_num = 1;
+          $(".questions").show();
           showQuestions();
           $(".score").text("Current score " + score + "/3")
         })
@@ -89,8 +89,10 @@ $(function() {
   var nextQuestion = function() {
     question_num += 1;
 
-    if (question_num === 4) {
-      $(".questions").empty();
+    if (question_num === 2) {
+
+      question_num = 1;
+      $(".questions").hide();
       $("h2").hide();
       $(".score").hide();
       $("button[type='submit']").hide();
@@ -100,7 +102,7 @@ $(function() {
 
 
     } else {
-    $(".questions p").remove();
+    // $(".questions").hide();
 
     showQuestions();
 
