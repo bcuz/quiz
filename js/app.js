@@ -1,6 +1,6 @@
 $(function() {
 
-  var question_num = 0;
+  var question_num = 1;
 
   var questions = [
   {
@@ -20,11 +20,11 @@ $(function() {
   // console.log(questions[1].question);
 
   var showQuestions = function() {
-  $("h1").text("Question " + question_num + " out of 4")
-  $(".questions").prepend("<p>" + questions[question_num].question + "</p>\
-    <div><input type='radio' value='" + questions[question_num].option1 + "'>"
-    + questions[question_num].option1 + "</div><div><input type='radio' value='" +
-    questions[question_num].option2 + "'>" + questions[question_num].option2) + "</div>"
+  $("h1").text("Question " + question_num + " out of 5")
+  $(".questions").prepend("<p>" + questions[question_num-1].question + "</p>\
+    <div><input type='radio' value='" + questions[question_num-1].option1 + "'>"
+    + questions[question_num-1].option1 + "</div><div><input type='radio' value='" +
+    questions[question_num-1].option2 + "'>" + questions[question_num-1].option2) + "</div>"
   }
 
   showQuestions();
