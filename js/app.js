@@ -89,6 +89,7 @@ $(function() {
       $("button[type='submit']").hide();
       $("body").append("<div class='over'><p>Final score: " + score +
         "/3</p><button class='new'>Replay</button></div>");
+      // score = 0;
 
 
     } else {
