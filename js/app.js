@@ -2,6 +2,7 @@ $(function() {
 
   var question_num = 1;
   var score = 0;
+  $(".score").text("Current score " + score + "/3")
 
   var questions = [
   {
@@ -89,7 +90,7 @@ $(function() {
       $("button[type='submit']").hide();
       $("body").append("<div class='over'><p>Final score: " + score +
         "/3</p><button class='new'>Replay</button></div>");
-      // score = 0;
+      score = 0;
 
 
     } else {
