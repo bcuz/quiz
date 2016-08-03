@@ -18,10 +18,16 @@ $(function() {
 
   // console.log(questions[1].question);
 
+  // put this in a fuction
+
+  var showQuestions = function() {
   $(".questions").prepend("<p>" + questions[question_num].question + "</p>\
-    <input type='radio' value='" + questions[question_num].option1 + "'>"
-    + questions[question_num].option1 + "<input type='radio' value='" +
-    questions[question_num].option2 + "'>" + questions[question_num].option2)
+    <div><input type='radio' value='" + questions[question_num].option1 + "'>"
+    + questions[question_num].option1 + "</div><div><input type='radio' value='" +
+    questions[question_num].option2 + "'>" + questions[question_num].option2) + "</div>"
+  }
+
+  showQuestions();
 
   var nextQuestion = function() {
     question_num += 1;
@@ -29,7 +35,7 @@ $(function() {
 
     $(".questions").empty();
 
-    $(".questions").prepend("<p>" + questions[question_num].question + "</p>")
+    showQuestions();
   }
 
 $("form").submit(function() {
