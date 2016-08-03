@@ -32,25 +32,26 @@ $(function() {
     option3: "bob",
     option4: "nick",
     answer: "bob"
-  },
-
-  {
-    question: "Who did?",
-    option1: "gary",
-    option2: "lerton",
-    option3: "bob",
-    option4: "nick",
-    answer: "bob"
-  },
-
-  {
-    question: "Who did?",
-    option1: "gary",
-    option2: "lerton",
-    option3: "bob",
-    option4: "nick",
-    answer: "bob"
   }
+  // ,
+
+  // {
+  //   question: "Who did?",
+  //   option1: "gary",
+  //   option2: "lerton",
+  //   option3: "bob",
+  //   option4: "nick",
+  //   answer: "bob"
+  // },
+
+  // {
+  //   question: "Who did?",
+  //   option1: "gary",
+  //   option2: "lerton",
+  //   option3: "bob",
+  //   option4: "nick",
+  //   answer: "bob"
+  // }
   ]
 
   var showQuestions = function() {
