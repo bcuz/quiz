@@ -73,6 +73,7 @@ $(function() {
   // original questions are shown here.
   showQuestions();
 
+  // starts the quiz over
    $("body").on("click", ".new", function() {
           question_num = 1;
           showQuestions();
@@ -82,7 +83,6 @@ $(function() {
   var nextQuestion = function() {
     question_num += 1;
 
-    // this needs to be changed back to 6 at the end
     if (question_num === 4) {
       $(".questions").empty();
       $("h2").hide();
