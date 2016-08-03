@@ -6,31 +6,41 @@ $(function() {
   {
     question: "When did?",
     option1: "bob",
-    option2: "nick"
+    option2: "nick",
+    option3: "bob",
+    option4: "nick"
   },
 
   {
     question: "Who did?",
     option1: "gary",
-    option2: "lerton"
+    option2: "lerton",
+    option3: "bob",
+    option4: "nick"
   },
 
   {
     question: "Who did?",
     option1: "gary",
-    option2: "lerton"
+    option2: "lerton",
+    option3: "bob",
+    option4: "nick"
   },
 
   {
     question: "Who did?",
     option1: "gary",
-    option2: "lerton"
+    option2: "lerton",
+    option3: "bob",
+    option4: "nick"
   },
 
   {
     question: "Who did?",
     option1: "gary",
-    option2: "lerton"
+    option2: "lerton",
+    option3: "bob",
+    option4: "nick"
   }
   ]
 
