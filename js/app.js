@@ -83,7 +83,7 @@ $(function() {
           question_num = 1;
           $(".questions").show();
           showQuestions();
-          $(".score").text("Current score " + score + "/3")
+          $(".score").hide();
         })
 
   var nextQuestion = function() {
