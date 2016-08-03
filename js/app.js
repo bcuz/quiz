@@ -31,7 +31,6 @@ $(function() {
 
   var nextQuestion = function() {
     question_num += 1;
-    console.log(question_num);
 
     $(".questions").empty();
 
