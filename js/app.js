@@ -58,6 +58,7 @@ $(function() {
     + questions[question_num-1].option3 + "</div>")
   }
 
+  // original questions are shown here.
   showQuestions();
 
   var nextQuestion = function() {
@@ -74,11 +75,14 @@ $(function() {
           question_num = 1;
           console.log(question_num);
           showQuestions();
+
+
         })
 
     } else {
     $(".questions").empty();
 
+    // firing this off two times..
     showQuestions();
 
     }
