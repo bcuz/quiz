@@ -51,6 +51,7 @@ $(function() {
   ]
 
   var showQuestions = function() {
+    // maybe could just replace values of form instead of recreating each time
   $(".over").remove();
   $("button[type='submit']").show();
   $("h1").text("Question " + question_num + " out of 5")
