@@ -56,6 +56,7 @@ $(function() {
   ]
 
   var showQuestions = function() {
+  $("input:radio").attr("checked", false);
   $(".score").show();
   $("h2").show();
   $(".over").remove();
