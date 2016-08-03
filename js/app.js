@@ -100,9 +100,14 @@ $("form").submit(function() {
 
       if ($("input[type='radio']:checked").val() === questions[question_num-1].answer) {
         score += 1;
+        alert("You're right!")
+        nextQuestion();
+      } else {
+        alert("Wrong!")
+        nextQuestion();
       }
 
-      nextQuestion();
+
     }
 
     return false;
