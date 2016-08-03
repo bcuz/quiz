@@ -18,8 +18,6 @@ $(function() {
 
   // console.log(questions[1].question);
 
-  // put this in a fuction
-
   var showQuestions = function() {
   $(".questions").prepend("<p>" + questions[question_num].question + "</p>\
     <div><input type='radio' value='" + questions[question_num].option1 + "'>"
