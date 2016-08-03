@@ -5,16 +5,17 @@ $(function() {
 
   var questions = [
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis?",
-    option1: "bob",
-    option2: "nick",
-    option3: "bob",
-    option4: "nick",
-    answer: "bob"
+    question: "Kurt Warner became the ___ player in NFL history\
+    throw 40+ touchdowns in a a single season.",
+    option1: "1st",
+    option2: "2nd",
+    option3: "3rd",
+    option4: "4th",
+    answer: "2nd"
   },
 
   {
-    question: "Who did?",
+    question: "Which of these records did Marshall Faulk break?",
     option1: "gary",
     option2: "lerton",
     option3: "bob",
@@ -54,7 +55,7 @@ $(function() {
     // maybe could just replace values of form instead of recreating each time
   $(".over").remove();
   $("button[type='submit']").show();
-  $("h1").text("Question " + question_num + " out of 5")
+  $("h2").text("Question " + question_num + " out of 5")
   $(".questions").prepend("<p>" + questions[question_num-1].question + "</p>\
     <div><input type='radio' name='question' value='" + questions[question_num-1].option1 + "'>"
     + questions[question_num-1].option1 + "</div><div><input type='radio' name='question' value='" +
@@ -78,7 +79,7 @@ $(function() {
     // this needs to be changed back to 6 at the end
     if (question_num === 2) {
       $(".questions").empty();
-      $("h1").remove();
+      $("h2").remove();
       $("button[type='submit']").hide();
       $("body").append("<div class='over'><p>Finished. Score: " + score +
         "/5</p><button class='new'>New Game</button></div>");
