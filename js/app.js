@@ -79,7 +79,8 @@ $(function() {
       $(".questions").empty();
       $("h1").remove();
       $("button[type='submit']").hide();
-      $("body").append("<div class='over'><p>Finished. Score: " + score +"/5</p><button class='new'>New Game</button></div>");
+      $("body").append("<div class='over'><p>Finished. Score: " + score +
+        "/5</p><button class='new'>New Game</button></div>");
 
 
     } else {
