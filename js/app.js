@@ -74,6 +74,7 @@ $(function() {
   var nextQuestion = function() {
     question_num += 1;
 
+    // this needs to be changed back to 6 at the end
     if (question_num === 2) {
       $(".questions").empty();
       $("h1").remove();
