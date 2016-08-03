@@ -2,7 +2,6 @@ $(function() {
 
   var question_num = 1;
   var score = 0;
-  $(".score").text("Current score " + score + "/3")
 
   var questions = [
   {
@@ -77,6 +76,7 @@ $(function() {
    $("body").on("click", ".new", function() {
           question_num = 1;
           showQuestions();
+          $(".score").text("Current score " + score + "/3")
         })
 
   var nextQuestion = function() {
