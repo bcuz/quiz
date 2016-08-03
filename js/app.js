@@ -16,11 +16,11 @@ $(function() {
 
   {
     question: "Which of these single season records did Marshall Faulk break?",
-    option1: "Receiving yards for a running back",
+    option1: "Receiving touchdowns for a running back",
     option2: "Total yards from scrimmage",
     option3: "Rushing touchdowns",
-    option4: "Receiving touchdowns for a running back",
-    answer: "Total yards from scrimmage",
+    option4: "Receptions by a running back",
+    answer: "Total yards from scrimmage"
   },
 
   {
