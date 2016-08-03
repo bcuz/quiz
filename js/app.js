@@ -16,11 +16,11 @@ $(function() {
   }
   ]
 
-  $("h1").text("Question " + question_num + " out of 4")
 
   // console.log(questions[1].question);
 
   var showQuestions = function() {
+  $("h1").text("Question " + question_num + " out of 4")
   $(".questions").prepend("<p>" + questions[question_num].question + "</p>\
     <div><input type='radio' value='" + questions[question_num].option1 + "'>"
     + questions[question_num].option1 + "</div><div><input type='radio' value='" +
@@ -31,7 +31,6 @@ $(function() {
 
   var nextQuestion = function() {
     question_num += 1;
-    $("h1").text("Question " + question_num + " out of 4")
     $(".questions").empty();
 
     showQuestions();
