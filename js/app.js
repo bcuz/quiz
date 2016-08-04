@@ -5,7 +5,7 @@ $(function() {
 
   var questions = [
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, cum.?",
+    question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.?",
     option1: "bob",
     option2: "nick",
     option3: "bob",
