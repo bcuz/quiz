@@ -55,6 +55,13 @@ $(function() {
   // }
   ]
 
+  var newGame = function() {
+    question_num = 1;
+    $(".questions").show();
+    showQuestions();
+    $(".score").hide();
+  }
+
   var showQuestions = function() {
   $("input:radio").attr("checked", false);
   $(".score").show();
@@ -80,10 +87,7 @@ $(function() {
 
   // starts the quiz over
    $("body").on("click", ".new", function() {
-          question_num = 1;
-          $(".questions").show();
-          showQuestions();
-          $(".score").hide();
+          newGame();
         })
 
   var nextQuestion = function() {
