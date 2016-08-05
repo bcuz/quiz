@@ -1,3 +1,5 @@
+'use strict'   //strict mode
+
 $(function() {
 
   var question_num = 1;
