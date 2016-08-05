@@ -62,13 +62,18 @@ $(function() {
     $(".score").hide();
   }
 
+  var genState = function() {
+    $("input:radio").attr("checked", false);
+    $(".score").show();
+    $("h2").show();
+    $(".over").remove();
+    $("button[type='submit']").show();
+    $("h2").text("Question " + question_num + " out of 3")
+
+  }
+
   var showQuestions = function() {
-  $("input:radio").attr("checked", false);
-  $(".score").show();
-  $("h2").show();
-  $(".over").remove();
-  $("button[type='submit']").show();
-  $("h2").text("Question " + question_num + " out of 3")
+  genState();
 
   $(".questions p ").text( questions[question_num-1].question);
   $("label[for*='1']").text(questions[question_num-1].option1);
