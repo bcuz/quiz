@@ -73,17 +73,17 @@ $(function() {
   }
 
   var showQuestions = function() {
-  genState();
+    genState();
 
-  $(".questions p ").text( questions[question_num-1].question);
-  $("label[for*='1']").text(questions[question_num-1].option1);
-  $("#1").val(questions[question_num-1].option1)
-  $("label[for*='2']").text(questions[question_num-1].option2);
-  $("#2").val(questions[question_num-1].option2)
-  $("label[for*='3']").text(questions[question_num-1].option3);
-  $("#3").val(questions[question_num-1].option3)
-  $("label[for*='4']").text(questions[question_num-1].option4);
-  $("#4").val(questions[question_num-1].option4)
+    $(".questions p ").text( questions[question_num-1].question);
+    $("label[for*='1']").text(questions[question_num-1].option1);
+    $("#1").val(questions[question_num-1].option1)
+    $("label[for*='2']").text(questions[question_num-1].option2);
+    $("#2").val(questions[question_num-1].option2)
+    $("label[for*='3']").text(questions[question_num-1].option3);
+    $("#3").val(questions[question_num-1].option3)
+    $("label[for*='4']").text(questions[question_num-1].option4);
+    $("#4").val(questions[question_num-1].option4)
 
   }
 
@@ -91,9 +91,9 @@ $(function() {
   showQuestions();
 
   // starts the quiz over
-   $("body").on("click", ".new", function() {
-          newGame();
-        })
+  $("body").on("click", ".new", function() {
+    newGame();
+      })
 
   var nextQuestion = function() {
     question_num += 1;
