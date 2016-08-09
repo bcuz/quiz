@@ -1146,6 +1146,9 @@ body {
 input {
   margin-right: 0.5em; }
 
+img {
+  margin-top: 50px; }
+
 @media (min-width: 700px) {
   .example-style1 {
     /*
