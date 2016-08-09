@@ -62,6 +62,7 @@ $(function() {
     $(".questions").show();
     showQuestions();
     $(".score").hide();
+    $("img").show();
   }
 
   var genState = function() {
@@ -106,6 +107,7 @@ $(function() {
       $(".questions").hide();
       $("h2").hide();
       $(".score").hide();
+      $("img").hide();
       $("button[type='submit']").hide();
       $("body").append("<div class='over'><p>Final score: " + score +
         "/3</p><button class='new'>Replay</button></div>");
